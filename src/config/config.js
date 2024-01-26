@@ -1,4 +1,9 @@
-export const PORT = 8080
-export const MONGODB_CNX_STR = 'mongodb+srv://pekalion:cMDnX7r1VjPn2vQO@clusterpfcoderhouse.adlsvj7.mongodb.net/'
-export const JWT_PRIVATE_KEY = 'jwtsecret'
-export const COOKIE_SECRET = 'cookiesecret'
+import dotenv from 'dotenv'
+
+dotenv.config()
+
+export const PORT = process.env.PORT
+export const MODE = process.env.MODE
+export const MONGODB_CNX_STR = process.env.MONGODB_CNX_STR
+export const JWT_PRIVATE_KEY = process.env.JWT_PRIVATE_KEY
+export const COOKIE_SECRET = process.env.COOKIE_SECRET
